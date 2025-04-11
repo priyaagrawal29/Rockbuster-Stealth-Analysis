@@ -1,4 +1,5 @@
 -- Query to calculate descriptive statistics for numerical columns
+
 SELECT MIN(release_year) AS min_release_year,
   MAX(release_year) AS max_release_year,
   AVG(release_year) AS avg_release_year,
