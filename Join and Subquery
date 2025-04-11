@@ -1,4 +1,5 @@
 --Query to identify the top 5 customers in the top 10 cities in the top 10 countries in terms of customer numbers.
+
 SELECT B.customer_id, B.first_name, B.last_name, D.city, E.country, SUM(A.amount) AS total_amount_paid
 FROM payment A
 INNER JOIN customer B ON A.customer_id = B.customer_id
